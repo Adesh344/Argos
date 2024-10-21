@@ -1,17 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import AppRoute from './routes/route';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <p>Argos</p>
-       
-    </>
-  )
+    <div>
+      {/* for adding navbar in future */}
+      {/* <nav>
+        <Link to="/"></Link>
+        <Link to="/doc"></Link>
+        <Link to="/qa"></Link>
+      </nav> */}
+      <AppRoute />
+    </div>
+  );
 }
 
-export default App
+export default App;
